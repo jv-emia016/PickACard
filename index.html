@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>🃏 Pick-a-Card: 54 Questions to Connect, Laugh & Learn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🃏 Pick-a-Card</h1>
+<h2>54 Questions to Connect, Laugh & Learn</h2>
+
+<label for="category-select">Choose a category to draw from:</label>
+<select id="category-select" aria-label="Select category">
+  <option value="all">All Categories</option>
+  <option value="fun">🎨 Just for Fun & a Bit of Chaos</option>
+  <option value="bold">🧠 Big Questions, Bold Answers</option>
+  <option value="learn">📚 The Way I Learn & Work</option>
+  <option value="friends">💛 Me, My Friends, & My Vibe</option>
+</select>
+
+<div class="card" role="region" aria-live="polite" aria-atomic="true" tabindex="0">
+  <div class="category" id="card-category">Select a category and click "Draw Card"</div>
+  <div class="question" id="card-question"></div>
+</div>
+
+<button id="draw-button" aria-label="Draw a question card">Draw Card</button>
+<button id="share-button" aria-label="Share this question" disabled>Share this question</button>
+
+<footer>Created for your fun & meaningful connections.</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
